@@ -1,0 +1,16 @@
+body {
+    background-image: linear-gradient(to left, #000000, rgb(23, 95, 228));
+}
+
+nav {
+    
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(23, 95, 228), black);
+}
+
+
+.jumbotron {
+    color: aliceblue;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(23, 95, 228), black);
+}
