@@ -3,8 +3,8 @@ const { Post } = require('../models');
 
 const postData = [
   {
-    "title": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "title": "How do you make and Array",
+    "description": "Im new to coding and cant get my Array to work. Help!!!",
     "user_id": 1,
     "id":1
   },
@@ -15,8 +15,8 @@ const postData = [
     "id":2
   },
   {
-    "title": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+    "title": "HTML shorthcut",
+    "description": "Did you know you can use a ! to enter a html template? Life Saver!!",
     "user_id": 3,
     "id":3
   }
