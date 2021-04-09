@@ -47,7 +47,7 @@ If you have fursther questions, you can reach me at
 or
 jarred.caris@gmail.com
 
-[click for heroku domain] (https://note-taker-jarred.herokuapp.com/)
+[click for heroku domain] (https://dashboard.heroku.com/apps/aqueous-reef-40105/deploy/heroku-git)
 
 
-[click for URL] (https://jarred-caris.github.io/note_taker/)
+[click for URL] (https://jarred-caris.github.io/Tech_blog/)
