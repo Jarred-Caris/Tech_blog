@@ -30,7 +30,7 @@ router.get("/", async (req, res) => {
 
 router.get("/post/:id", async (req, res) => {
   try {
-    const postData = await post.findByPk(req.params.id, {
+    const postData = await Post.findByPk(req.params.id, {
       include: [
         {
           model: Comment,
@@ -52,6 +52,7 @@ router.get("/post/:id", async (req, res) => {
       loggedIn: req.session.logged_in,
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
@@ -66,7 +67,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
       
     });
     console.log(userData)
-    console.log("//////////")
+
 
     const user = userData.get({ plain: true });
     console.log(user)

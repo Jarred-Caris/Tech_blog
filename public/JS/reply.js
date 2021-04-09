@@ -1,10 +1,11 @@
 const newreply = async (event) => {
     event.preventDefault();
+    console.log("error")
   
     const replyText = document.querySelector('#reply_body').value.trim();
     
-    const postId = document.querySelector('#post-data').value.trim();
-  
+     const postId = document.querySelector('#reply_body').dataset.postid;
+    console.log(document.querySelector('#reply_body').dataset)
     if (replyText && postId) {
       const response = await fetch(`/api/posts`, {
         method: 'POST',

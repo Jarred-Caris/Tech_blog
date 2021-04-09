@@ -7,9 +7,14 @@
   <h5>{{reply_text}}</h5>
   {{/each}}
   <hr>
-  <input id="reply-body" style="background-color: darkgray;" placeholder="A snarky reply"></input><br><br>
-  <button id="replyButton">Send</button>
+  {{#if loggedIn}}
+  <form>
+    <input id="reply_body" data-postId="{{id}}" placeholder="reply placeholder"></input><br><br>
+
+    <button id="reply-Btn">Send</button>
+
+  </form>
+
+  <script src="/js/reply.js"></script>
+  {{/if}}
 </div>
-{{#if logged_in}}
-<script src="/js/reply.js"></script>
-{{/if}}
