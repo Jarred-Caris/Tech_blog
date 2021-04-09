@@ -17,14 +17,14 @@ const newPostHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to create project');
+      alert('Failed to create post');
     }
   }
 };
 
 
 document
-  .querySelector('.new-project-form')
-  .addEventListener('submit', newFormHandler);
+  .querySelector('#post')
+  .addEventListener('click', newPostHandler);
 
 
