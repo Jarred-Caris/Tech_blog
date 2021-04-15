@@ -46,7 +46,7 @@ router.get("/post/:id", async (req, res) => {
     });
 
     const postComplete = postData.get({ plain: true });
-
+    console.log(postComplete)
     res.render("post", {
       ...postComplete,
       loggedIn: req.session.logged_in,

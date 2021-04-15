@@ -7,7 +7,7 @@ const newreply = async (event) => {
   const postId = document.querySelector("#reply_body").dataset.postid;
   console.log(document.querySelector("#reply_body").dataset);
   if (replyText && postId) {
-    const response = await fetch(`/JS/api/replies`, {
+    const response = await fetch(`/api/comments`, {
       method: "POST",
       body: JSON.stringify({ replyText, postId }),
       headers: {
@@ -16,7 +16,7 @@ const newreply = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace(`/post/${post_id}`);
+      document.location.replace(`/post/${postId}`);
     } else {
       alert("Failed to create reply");
     }

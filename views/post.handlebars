@@ -3,8 +3,8 @@
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <br>
-  {{#each replies as |reply|}}
-  <h5>{{reply_text}}</h5>
+  {{#each comments as |reply|}}
+  <h5>{{reply.comment}}</h5>
   {{/each}}
   <hr>
   {{#if loggedIn}}
@@ -15,6 +15,6 @@
 
   </form>
 
-  <script src="/js/reply.js"></script>
+  <script src="/JS/reply.js"></script>
   {{/if}}
 </div>
